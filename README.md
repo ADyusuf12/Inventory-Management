@@ -5,6 +5,7 @@ A Django REST Framework-powered inventory management API
 
 The Inventory Management System is a RESTful API built with Django REST Framework (DRF). It allows users to perform CRUD operations on product inventory while ensuring secure authentication, data validation, and efficient pagination.
 
+
 🚀 Features
 
 ✅ CRUD Operations – Create, Retrieve, Update, and Delete products
@@ -21,7 +22,9 @@ The Inventory Management System is a RESTful API built with Django REST Framewor
 - Testing: Django TestCase, DRF APIClient
 - API Documentation: Postman
 
+
 🛠️ Setup & Installation
+
 
 1️⃣ Clone the Repository
 
@@ -47,10 +50,13 @@ python manage.py migrate
 python manage.py runserver
 The API is now accessible at: http://127.0.0.1:8000/
 
+
 🔑 Authentication
 
 Obtain a JWT Token
+
 Send a POST request to /api/token/ with valid credentials:
+
 {
     "username": "your_username",
     "password": "your_password"
@@ -66,6 +72,7 @@ This returns:
 Use the access_token in API requests:
 
 Authorization: Bearer your_access_token
+
 
 📦 API Endpoints
 
@@ -85,6 +92,7 @@ Authorization: Bearer your_access_token
 
 | DELETE | /api/products/{id}/ | Delete a product | 
 
+
 🔍 Testing
 
 Run unit tests using:
@@ -99,8 +107,11 @@ This validates: ✔ CRUD operations
 📖 Future Enhancements
 
 🚀 Search & Filtering – Implement search functionality for products
+
 🚀 Category Management – Allow products to be categorized
+
 🚀 Admin Panel Improvements – Enhance user roles & permissions
+
 
 🤝 Contributing
 
